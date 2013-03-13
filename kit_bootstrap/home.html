@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap, from Twitter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="home.html">KIT</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="about">About</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <!-- Row of columns main -->
+      <div class="row">
+        <div class="span6">
+          <h2>Route</h2>
+          <img src="img/piazzasanmarco.jpg"></img>
+        </div>
+        <div class="span6">
+          <h2>Stream</h2>
+          <iframe width="560" height="315" src="http://www.youtube.com/embed/izB3QUqKPSE?rel=0" frameborder="0" allowfullscreen></iframe>
+       </div>
+      </div>
+
+      <br>
+      <legend>Keep in touch with your loved ones using one of the buttons below.</legend>
+
+      <!-- Row of columns - buttons -->
+
+      <div class="row">
+        <div class="span3">
+          <!-- Button to trigger modal -->
+        <a href="#sendHug" role="button" class="btn" data-toggle="modal">Send me a hug</a>
+
+          <!-- Modal 1 -->
+<div id="sendHug" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="sendHugLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="sendHugLabel">Thanks for the love!</h3>
+  </div>
+  <div class="modal-body">
+    <p>When you send someone a hug they will receive it by feeling a vibration in their backpack</p>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+  </div>
+</div>
+
+          </div>
+          <div class="span3">
+<!-- Button to trigger modal -->
+        <a href="#highFive" role="button" class="btn" data-toggle="modal">Give me a high five &raquo;</a>
+            <!-- Modal 2 -->
+<div id="highFive" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="highFiveLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="highFiveLabel">BOOM</h3>
+  </div>
+  <div class="modal-body">
+    <p>We'll be tallying your high fives while your friends are away, once they get back in town they'll be able to able to repay you in spades. Maybe they'll give you a few extra ones just because.</p>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+  </div>
+</div>
+        </div>
+
+            <div class="span3">
+<!-- Button to trigger modal -->
+        <a href="#postCard" role="button" class="btn" data-toggle="modal">Request a postcard &raquo;</a>
+            <!-- Modal 3 -->
+<div id="postCard" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="postCardLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="postCardLabel">K.I.T.</h3>
+  </div>
+  <div class="modal-body">
+    <p>Pick your favorite shot from the videos above and request your friends send you a post card with that image. If they don't already have your address, add it below:</p>
+
+    <form>
+  <fieldset>
+    <label>Fist Name</label>
+    <input type="text">
+    <label>Last Name</label>
+    <input type="text">
+    <label>Address</label>
+    <input type="text">
+    <input type="text">
+    <label>City</label>
+    <input type="text">
+    <label> Country</label>
+    <input type="text">
+    <label>State</label>
+    <input type="text">
+    <label>Zip Code</label>
+    <input type="text"><br>
+    <button type="submit" class="btn">Submit</button>
+  </fieldset>
+</form>
+
+
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+  </div>
+</div>          
+            </div>
+            
+
+            <div class="span3">
+              <!-- Button to trigger modal -->
+        <a href="#giveTip" role="button" class="btn" data-toggle="modal">Suggest a location &raquo;</a></p>
+
+<!-- Modal 4 -->
+<div id="giveTip" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="giveTipLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="giveTipLabel">Send a Tip</h3>
+  </div>
+  <div class="modal-body">
+    <p>Are you an expert on where your friends is traveling? Send them suggestions for places to eat and stay or things to do below:</p>
+
+    <textarea rows="3"></textarea><br>
+    <button type="submit" class="btn">Submit</button>
+
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+  </div>
+</div>      
+
+
+
+            </div>
+
+
+
+      <footer>
+<br>
+
+        <p>&copy; Stuff In My Cloud 2013</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.8.0.min.js"><\/script>')</script>
+   <script src="js/bootstrap.js"></script>
+   <script> $($('.modal').modal(); </script>
+
+  </body>
+</html>
