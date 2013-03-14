@@ -230,6 +230,22 @@ body {
   background-color: #ffffff;
 }
 
+.hug-icon { 
+ position: absolute;
+ top: 288px;
+ left: 50%;
+ margin-left: 53px;
+ display: none;
+}
+
+.highFive-icon { 
+ position: absolute;
+ top: 310px;
+ left: 50%;
+ margin-left: -50px;
+ display: none;
+}
+
 a {
   color: #0088cc;
   text-decoration: none;
