@@ -46,6 +46,11 @@
     <div class="container">
 
       <!-- Row of columns main -->
+
+    <div class="alert alert-highfive">
+      <h4>Boom!</h4>  Ashley high-fived you back!
+      <a class="close" data-dismiss="alert" href="#">&times;</a>
+    </div>
       <div class="row">
         <div class="span12">
           <h2>Ashley's Route, March 13th, 2012</h2>
@@ -198,6 +203,22 @@
 		  e.preventDefault();
 		  $('.highFive-icon').fadeIn();
 		});
+
+    $(".alert-highfive").hide();                     
+$(document).keypress(function (a) {
+    if($('.alert-highfive').is(':hidden')){
+        $(".alert-highfive").show("fast");
+        // $("#query").val($("#query").val()+String.fromCharCode(a.charCode));
+        // document.forms['form'].elements['query'].focus();
+    }
+});
+
+$(document).bind('paste', function(a){
+    console.log(a);
+    // document.forms['form'].elements['query'].focus();
+    $(".alert-highfive").show("fast");
+
+});
 	});
     </script>
 

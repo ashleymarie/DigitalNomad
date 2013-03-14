@@ -3917,6 +3917,19 @@ input[type="submit"].btn.btn-mini {
   color: #468847;
 }
 
+.alert-highfive {
+  color: #a45100;
+  background-color: #ffc171;
+  border-color: #ff9000;
+}
+
+
+.alert-highfive h4 {
+  color: #a45100;
+  display:inline;
+}
+
+
 .alert-danger,
 .alert-error {
   color: #b94a48;
