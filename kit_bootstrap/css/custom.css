@@ -1,0 +1,28 @@
+.top-map {
+	position: absolute;
+	width: 150px;
+	z-index: 1000;
+	left: 840px;
+	top: 330px;
+}
+
+.top-map h2{
+	display: none;
+}
+
+.top-vid {
+	position: absolute;
+	z-index: 1000;
+	left: 953px;
+	top: 465px;
+
+}
+
+.top-vid h2{
+	display: none;
+}
+
+.top-vid iframe{
+	width: 250px;
+	height: 200px;
+}
